@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="checkout.css">
+  </head>
+    <style>
+      body {
+        text-align: center;
+        padding: 40px 0;
+        /* background: var(--bg-color); */
+      }
+        h1 {
+          color: var(--green);
+          font-family: "Nunito",sans-serif;
+          font-weight: 120000;
+          font-size: 3.5rem;
+          margin-bottom: 10px;
+        }
+        p {
+          color: #404F5E;
+          font-family: "Nunito",sans-serif;
+          font-size:20px;
+          margin: 0;
+        }
+      i {
+        color: var(--green);
+        font-size: 750%;
+        line-height: 2;
+        font-weight: 1200;
+        margin-left:-15px;
+      }
+      .card {
+        background: var(--bg-color);
+        padding: 60px;
+        border-radius: 4px;
+        box-shadow: 0 2px 3px #C8D0D8;
+        display: inline-block;
+        margin: 0 auto;
+      }
+      .btn{
+        
+        font-size: 1.5rem;
+        line-height: 2;
+        border-radius: 4px;
+        padding: .25rem 1rem;
+      }
+      .status{
+        background-color: var(--bg-green);
+      }
+      .back{
+        background-color: whitesmoke;
+      }
+      .btn:hover{
+          background-color: var(--light-green);
+          font-weight: bolder;
+      }
+    </style>
+    <script>
+        import totalSum from '.restaurant/index.js';
+        console.log(totalSum);
+        function message(){
+//             setTimeout(alert("your order is being processed"), 200);
+            alert("Order is successfully completed and You will receive your order in your doorstep within a few minutes");
+        }
+    </script>
+    <body>
+      <div class="card">
+      <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
+        <i class="checkmark">✓</i>
+      </div>
+        <h1>Success</h1> 
+        <p>Payment is processed successfully.<br/>Your order is on the way ;)</p>
+        <br><br>
+        <button class="btn status"><a href="status.html" onclick="message()">Order Status</a></button>
+        <button class="btn back"><a href="../restaurant/index.html">Back to home</a></button>
+      </div>
+      
+    </body>
+</html>
